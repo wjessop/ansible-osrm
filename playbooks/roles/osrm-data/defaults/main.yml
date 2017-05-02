@@ -10,6 +10,6 @@
 
 # the country to download
 #
-data_country_name: slovenia
+data_country_name: england
 
 osrm_datadir: /home/osrm

@@ -1,0 +1,12 @@
+[Unit]
+Description=OSRM route daemon
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/osrm-routed /home/osrm/england-latest.osrm --ip 0.0.0.0 --port 10000 --threads 1
+User=osrm
+
+[Install]
+WantedBy=multi-user.target
